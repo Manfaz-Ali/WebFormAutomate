@@ -1,0 +1,54 @@
+DATOS PERSONALES,PERSONAL INFORMATION,""" ""","""",,,,
+Tipo de documento,Document type,NIF/NIE,NIF/NIE,,,,
+Número de documento,Document number,""" ""","""",,,,
+Nombre,Name,""" ""","""",,,,
+Apellido 1,Lastname 1,""" ""","""",,,,
+Apellido 2,Surname 2,""" ""","""",,,,
+Género,Gender,Varón/Mujer,Male Female,,,,
+Fecha de nacimiento,Birthdate,DD/MM/AAAA,DD/mm/AAAA,,,,
+Estado civil,Civil status,"Unidos sin documentación legal
+ Casado 
+ Soltero
+ Separados sin documentación legal
+ Soltero
+ Viudo","United without legal documentation
+ Married
+ Single
+ Separate without legal documentation
+ Single
+ Widower",,,,
+Nacionalidad,Nationality,""" ""","""",,,,
+País de nacimiento,Country of birth,""" ""","""",,,,
+DATOS DE CONTACTO,CONTACT INFORMATION,""" ""","""",,,,
+Email,E-mail,""" ""","""",,,,
+Teléfono móvil,Mobile phone,""" ""","""",,,,
+DIRECCIÓN,ADDRESS,""" ""","""",,,,
+Tipo de vía,Type of road,""" ""","""",,,,
+Dirección,Address,""" ""","""",,,,
+Número,Number,""" ""","""",,,,
+Localidad,Location,""" ""","""",,,,
+Provincia,Province,""" ""","""",,,,
+Código postal,Postal Code,""" ""","""",,,,
+Tipo de vivienda,Type of housing,""" ""","""",,,,
+Antiguedad,Antiquity,""" ""","""",,,,
+DATOS DE VEHÍCULO,Vehicle data,""" ""","""",,,,
+Tipo,Guy,Motick,Match,,,,
+Marca,Brand,Motick,Match,,,,
+Modelo,Model,Motick,Match,,,,
+Versión,Version,Motick,Match,,,,
+Matrícula,Tuition,Motick,Match,,,,
+PVP IVA Incluido,VAT PVP included,Motick,Match,,,,
+DATOS DE FINANCIACIÓN,Financing data,""" ""","""",,,,
+Plazo de préstamos (meses),Loan term (months),""" ""","""",,,,
+EMPLEO ACTUAL,CURRENT JOB,""" ""","""",,,,
+TRA. CUENTA AJENA,Tra. EMPLOYED,""" ""","""",,,,
+Tipo de ingresos,Type of income,""" ""","""",TRA. CUENTA PROPIA,Tra. OWN ACCOUNT,,
+Fijo,Permanent,""" ""","""",Tipo de ingresos,Type of income,,
+Tipo de empleo,job type,""" ""","""",Tipo de empleo,job type,,
+Cargo,Post,""" ""","""",Cargo,Post,,
+Ingresos mensuales,Monthly income,""" ""","""",Ingresos mensuales,Monthly income,,
+Nombre de la empresa,Company name,""" ""","""",Nombre de la empresa,Company name,,
+Tamañao de la empresa,Such a slope,nº empleados aprox,No. Employees approx,Tamañao de la empresa,Such a slope,,
+Fecha anitugedad,Anituge date,DD/MM/AAAA,DD/mm/AAAA,Fecha anitugedad,Anituge date,,
+DATOS BANCARIOS,BANK DATA,""" ""","""",Tipo de facturación,Billing type,Facturación anual IVA/Rendimiento neto anual,Annual annual VAT Billing/Performance
+IBAN,WERE GOING,""" ""","""",,,,
