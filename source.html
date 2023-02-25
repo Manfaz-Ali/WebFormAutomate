@@ -1,0 +1,329 @@
+<html>
+
+<head>
+    <title>BBVA Consumer Finance</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./img/coronita/favicon.ico">
+
+    <link rel="stylesheet" media="screen" href="./estilos/io/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="./estilos/io/bootstrap-theme.min.css">
+    <link rel="stylesheet" media="screen" href="./estilos/io/estilo_fnet_coronita.css">
+    <link rel="stylesheet" type="text/css" href="./estilos/io/fonts.css">
+
+    <script src="./js/io/jquery.min.js"></script>
+    <script src="./js/io/invocaciones_io_pub.js"></script>
+    <script src="./js/io/jquery.validate.min.js"></script>
+    <script src="./js/io/funciones_campos_coronita.js"></script>
+    <script src="./js/io/bootstrap.min.js"></script>
+    <script src="./mult/direcciones_fnet.js?v=2"></script>
+
+    <script>
+        function cargar() {
+            cbtfServlet('avisoCookies_io.html', '', 'cookies_header');
+            cbtfServlet('./header_io.html', '', 'header');
+            cbtfServlet('./indice_contenido_io.html', '', 'contenido');
+        }
+    </script>
+</head>
+
+<body onload="cargar();">
+    <div class="container">
+        <img src="./img/coronita/finanzianet.png" class="bg">
+        <div id="cookies_header" class="row cookiesHeader" rows="2,90,*">
+
+
+
+            <title>Aviso uso de cookies</title>
+            <link rel="stylesheet" href="mult/avisoCookies.css">
+            <script language="JavaScript">
+
+                jQuery(document).ready(function () {
+                    // Ocultamos el aviso y redimensionamos el frameset
+                    parent.document.getElementById('cookies_header').setAttribute('rows', '2,90,*');
+                    $("#avisoCookies").hide();
+
+                })
+
+            </script>
+
+
+            <div id="avisoCookies" style="display: none;">
+                <div id="aviCooCerrar" title="Cerrar" alt="Cerrar">&nbsp;</div>
+                <div id="aviCooInfo">
+                    <p>Información</p>
+                </div>
+                <div id="aviCooTexto">
+                    <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrar a los usuarios
+                        publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación.
+                        Si se continúa navegando, consideramos que se acepta su uso. Es posible cambiar la configuración
+                        u obtener más información <a
+                            href="javascript:AbrirVentana('BDFNPoliticaCookies.html', 540, 700);">aquí</a>.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="row">
+            <header id="header" class="paddingright-0 paddingleft-0 col-xs-12">
+                <meta charset="UTF-8">
+
+                <script src="./js/io/timedate_io.js"></script>
+
+
+                <div id="header_large">
+                    <div class="masthead">
+                        <div>
+                            <h1 class="logo_bbva">
+                                <a href="./login_nfinet.html" title="Enlace Home">
+                                    <img src="./img/coronita/logoBBVA.png" alt="BBVA - Banca Electrónica">
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <div id="contenido" class="paddingright-0 paddingleft-0 col-xs-12">
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <script src="./js/io/botones_cabecera_io.js"></script>
+
+                <div id="content_large">
+                    <!-- <img src="../img/coronita/finanzianet.png" class="bg"> -->
+                    <div id="content">
+                        <div id="texto-principal">
+                            <h1 class="Finanzianet-financi"> Finanzianet, financiación online</h1>
+                            <p class="accesoCliente upMargin">ACCESO CLIENTE</p>
+                            <form method="post" name="acceso" id="acceso" action="" target="_top"
+                                novalidate="novalidate">
+                                <input type="hidden" id="username" name="username">
+                                <input type="hidden" name="login-form-type" id="login-form-type" value="pwd">
+                                <div id="alineacion-central" class="flex">
+                                    <div class="alineacionBlockes width">
+                                        <div class="row">
+                                            <div class="col-sm-12 alineado">
+                                                <div class="input-container">
+                                                    <div class="marginBottom05 margensup05">
+                                                        <input id="colaborador" name="colaborador" class="width100"
+                                                            placeholder="" value="">
+                                                        <label for="colaborador" class="width100">Número de usuario
+                                                            *</label>
+                                                    </div>
+                                                </div>
+                                                <div id="errorcolaborador" class="Error-Notifier">
+                                                    <span id="spanerrorcolaborador"
+                                                        class="Error-Label colorErrorHome"><label></label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 alineado">
+                                                <div class="input-container">
+                                                    <div class="marginBottom05 margensup05">
+                                                        <input id="usuario" name="alias" class="width100" placeholder=""
+                                                            onblur="$(this).val($(this).val().toUpperCase())" value="">
+                                                        <label for="usuario" class="width100">Alias *</label>
+                                                    </div>
+                                                </div>
+                                                <div id="errorusuario" class="Error-Notifier">
+                                                    <span id="spanerrorusuario"
+                                                        class="Error-Label colorErrorHome"><label></label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 alineado">
+                                                <div class="input-container">
+                                                    <div class="marginBottom05 margensup05">
+                                                        <input id="password" name="password" type="password"
+                                                            class="width100 passwordHome" placeholder="" maxlength="6"
+                                                            value="">
+                                                        <label for="password" class="width100">Contraseña *</label>
+                                                        <span toggle="#password" id="showPass"
+                                                            class="fa-fw field-icon toggle-password fa-eye hideEye"></span>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    if (Function('/*@cc_on return document.documentMode===10@*/')()) {
+                                                        $('#showPass').addClass('ie10');
+                                                    }
+                                                </script>
+                                                <div id="errorpassword" class="Error-Notifier">
+                                                    <span id="spanerrorpassword"
+                                                        class="Error-Label colorErrorHome"><label></label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="cuadradoTransparente1" class="alineacionBlockes">
+                                        <div class="rectBase">
+                                            <p><label class="texto2 weight white textoMovil">Financiación online</label>
+                                            </p>
+                                            <p><label class="texto3 white"><span style="opacity:0.6">Descubre las
+                                                        ventajas de operar a través de </span>BBVA Consumer
+                                                    Finance.</label></p>
+                                        </div>
+                                    </div>
+                                    <div id="cuadradoTransparente2" class="alineacionBlockes">
+                                        <div class="rectBase">
+                                            <p><label class="texto4 weight white textoMovil">Línea de teléfono</label>
+                                            </p>
+                                            <p><label class="texto3 white">902 300 053 <span style="opacity:0.6">está a
+                                                        su servicio para cualquier consulta.</span></label></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="botones" class="upMargin">
+                                    <input id="btnNuevoUsuario" type="button" class="homepageButton transparentColor"
+                                        value="Nuevo usuario" onclick="javascript:dirigir('urlInstalacion');"><input
+                                        id="accesoLogin" type="button" class="homepageButton blueColor" form="login"
+                                        name="accesoLogin" value="Aceptar" onclick="comprobarValidaciones(aceptar);">
+
+                                </div>
+                                <div id="primerUser" class="mobileCenter">
+                                    <label class="nuevoCliente transparency">¿Entra por primera vez?</label>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <script>
+                        $(document).ready(function () {
+                            if ($(window).width() <= 768) {
+                                if ($('#alineacion-central').hasClass('flex'))
+                                    $('#alineacion-central').removeClass('flex');
+
+                                $('#botones').remove().insertBefore($('#cuadradoTransparente1'));
+                                $('#primerUser').remove().insertAfter($('#btnNuevoUsuario'));
+
+                                $('#accesoLogin').remove().insertBefore($('#btnNuevoUsuario'));
+
+                            } else {
+                                if (!$('#alineacion-central').hasClass('flex'))
+                                    $('#alineacion-central').addClass('flex');
+
+                                $('#botones').remove().insertAfter($('#alineacion-central'));
+                                $('#primerUser').remove().insertAfter($('#botones'));
+
+                                $('#accesoLogin').remove().insertAfter($('#btnNuevoUsuario'));
+                            }
+                        });
+
+                        $(window).resize(function () {
+                            if ($(window).width() <= 768) {
+                                if ($('#alineacion-central').hasClass('flex'))
+                                    $('#alineacion-central').removeClass('flex');
+
+                                $('#botones').remove().insertBefore($('#cuadradoTransparente1'));
+                                $('#primerUser').remove().insertAfter($('#btnNuevoUsuario'));
+
+                                $('#accesoLogin').remove().insertBefore($('#btnNuevoUsuario'));
+                            } else {
+                                if (!$('#alineacion-central').hasClass('flex'))
+                                    $('#alineacion-central').addClass('flex');
+
+                                $('#botones').remove().insertAfter($('#alineacion-central'));
+                                $('#primerUser').remove().insertAfter($('#botones'));
+
+                                $('#accesoLogin').remove().insertAfter($('#btnNuevoUsuario'));
+                            }
+                        });
+
+                        $(".toggle-password").click(function () {
+                            $(this).toggleClass("fa-eye fa-eye-slash");
+                            $(this).toggleClass("hideEye eye");
+                            var input = $($(this).attr("toggle"));
+
+                            if (input.attr("type") == "password") {
+                                input.attr("type", "text");
+                            } else {
+                                input.attr("type", "password");
+                            }
+                        });
+                        jQuery.validator.addMethod("noSpace", function (value, element) {
+                            return value.indexOf(" ") < 0 && value != "";
+                        }, "No se permiten espacios");
+
+                        $(document).ready(function () {
+                            $("#acceso").validate({
+                                rules: {
+                                    colaborador: {
+                                        required: true,
+                                        minlength: 5,
+                                        noSpace: true
+                                    },
+                                    usuario: {
+                                        required: true,
+                                        minlength: 3,
+                                        noSpace: true
+                                    },
+                                    password: {
+                                        required: true,
+                                        minlength: 5
+                                    }
+                                },
+                                messages: {
+                                    colaborador: {
+                                        required: "El campo 'Número de usuario' es obligatorio",
+                                        minlength: "El campo 'Número de usuario' debe tener al menos 5 caracteres",
+                                        noSpace: "El campo 'Número de usuario' no puede contener espacios"
+                                    },
+                                    usuario: {
+                                        required: "El campo 'Alias' es obligatorio",
+                                        minlength: "El campo 'Alias' debe tener al menos 3 caracteres",
+                                        noSpace: "El campo 'Alias' no puede contener espacios"
+                                    },
+                                    password: {
+                                        required: "El campo 'Contraseña' es obligatorio",
+                                        minlength: "El campo 'Contraseña' debe tener al menos 5 caracteres"
+                                    }
+                                },
+                                showErrors: function (errorMap, errorList) {
+                                    $.each(errorList, function () {
+                                        var name = $(this.element).attr("id");
+                                        $("#spanerror" + name + " > label").text(this.message);
+                                        showErrorLabel(this.element.id, true);
+                                        $(this.element).addClass("error");
+                                    });
+                                    var validator = this;
+                                    var elementList = this.currentElements;
+                                    $.each(elementList, function () {
+                                        if (!(validator.invalid[$(this).attr('id')])) {
+                                            showErrorLabel($(this).attr("id"), false);
+                                            $(this).removeClass("error");
+                                        }
+                                    });
+                                }
+                            });
+                        });
+
+                        function comprobarValidaciones(funValid) {
+                            var fAux = function () { return $('#usuario').valid() & $('#colaborador').valid() & $('#password').valid() };
+                            if (fAux()) {
+                                funValid();
+                            } else {
+                                $('html, body').animate({
+                                    scrollTop: $(".error:first").offset().top - 130
+                                }, 600);
+
+                                //$('html, body').animate({ scrollTop: 0 }, 600);
+                            }
+                        }
+                    </script>
+                    <script>addFilledClassOnChange();</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
